@@ -1,26 +1,13 @@
-# ML/AI/CV Demo of Gaze Detection running on NPU
+# BrightSign Model Package (BSMP) Demo using and HTML5 Application
 
-This demo HTML/JS application showcases the tech behind Brightsign's new machine learning algorithms run _on the player_. An HTML frontend running a Node.js script that displays the output of the ML algorithm on the player. The Demo should:
+This demo HTML/JS application showcases the tech behind the NPU that is enabled in Brightsign players.  This demo shows:
 
-- Show the images output from the ML application front and center on the screen
-- Images update at 30 fps just like video
-- If no image update in 5 seconds (meaning no people detected for 5 seconds), the screen will go to black
+- Full motion video
+- A "picture-in-picture" of what the camera AI "sees" - including bounding boxes around faces
+  - faces looking at the screen will be bounded in green, otherwise red
 - A live update of the incoming UDP messages at the bottom of the screen
 
-### TODO
-
-- "presentation" (video?) in upper third
-- output, decorated camera view in middle third
-- "stats" in bottom third
-- figure out how to rotate the display to be portrait (NB there are some notes that it's different and maybe only 1080p on RK)
-
-   * might be [here](https://brightsign.atlassian.net/wiki/spaces/DOC/pages/370678463/videomodeconfiguration)
-
-If you are operating from the repository and wish to build this app and run it yourself, you will need to follow a few steps:
-
 ## Building the App
-
-### NVM
 
 ```sh
 nvm install --lts
@@ -50,6 +37,3 @@ SD Card
 
 The Brightsign CLI is the easiest way to do this, find info on that [here](https://www.npmjs.com/package/@brightsign/bsc).
 
-Can't get `bsc` to work... 
-
-so zip the dist and copy to player

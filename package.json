@@ -1,5 +1,5 @@
 {
-  "name": "ai-ml-demo-app",
+  "name": "simple-gaze-detection-html",
   "version": "1.0.0",
   "description": "## Introduction",
   "main": "script.js",
@@ -35,5 +35,5 @@
     "node": "^14.17.6",
     "nvm": "^0.0.4"
   },
-  "homepage": "https://github.com/brightsign/ai-ml-demo-app#readme"
+  "homepage": "https://github.com/brightsign/simple-gaze-detection-html#readme",
 }
