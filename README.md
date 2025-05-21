@@ -50,9 +50,11 @@ sd/
 
 ## Ensure the BSMP is Installed
 
-If your player needs the extension installed, include the [bsfw installation package](./bsfw/cobra-standalone-npu_gaze-0.1.3-alpha.bsfw) on the root of the SD card and it will be automatically installed on the next boot.
+The makefile automatically downloads and copies the BSMP to the sd folder.  However, if you want to manually do this step:
 
-This BSMP is an ALPHA release.  
+* download the [gaze detection bsfw installation package](https://firmware.bsn.cloud/cobra-standalone-npu_gaze-0.1.3-alpha.bsfw)
+* copy the file to the root of the SD card 
+* it will be automatically installed on the next boot
 
 ## Licensing
 
