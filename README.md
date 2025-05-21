@@ -34,6 +34,7 @@ You should now see a `node_modules/` and `dist/` folder now in your repository. 
 The easiest way to build the file folder you need is to:
 
 ```
+mkdir -p ./sd/dist
 make publish
 ```
 
