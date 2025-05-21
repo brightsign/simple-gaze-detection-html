@@ -26,7 +26,8 @@ EDIT BELOW FOR PRESENTATION CHANGES
 --------------------------------------------------------------------------------------------------------------------------------
 */
 
-const image_location_top = 70;
+const IMAGE_LOCATION_TOP = 70;
+const image_location_top = IMAGE_LOCATION_TOP;
 const image_location_left = 90;
 const vidPath = '/GG-horizontal-HD.mp4'
 
