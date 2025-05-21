@@ -11,13 +11,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brightsign/ai-ml-demo-app.git"
+    "url": "git+https://github.com/brightsign/simple-gaze-detection-html.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/brightsign/ai-ml-demo-app/issues"
+    "url": "https://github.com/brightsign/simple-gaze-detection-html/issues"
   },
   "devDependencies": {
     "@babel/core": "^7.23.0",
@@ -35,5 +35,5 @@
     "node": "^14.17.6",
     "nvm": "^0.0.4"
   },
-  "homepage": "https://github.com/brightsign/simple-gaze-detection-html#readme",
+  "homepage": "https://github.com/brightsign/simple-gaze-detection-html#readme"
 }
