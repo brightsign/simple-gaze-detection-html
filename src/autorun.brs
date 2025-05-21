@@ -5,7 +5,8 @@ function main()
 
 	' Create HTML Widget which is defined below in its own function
 	widget = CreateHTMLWidget(mp)
-'	widget.SetTransform("rot90") ' Put the widget in portrait mode
+    ' uncomment the next line for vertical
+    'widget.SetTransform("rot90")
 	widget.Show()
 
 	' Enable SSH
@@ -30,15 +31,16 @@ function CreateHTMLWidget(mp as object) as object
 	height = vidmode.GetResY()
 
 	sm=vidmode.GetScreenModes()
-	sm[0].transform = "90"
-	sm[0].video_mode="2160x3840x30p" ' needed to make video look good
+    ' uncomment this section for vertical
+	sm[0].transform = "0"
+	sm[0].video_mode="1920x1080x30p"
 	vidmode.SetScreenModes(sm)
 
-	' https://brightsign.atlassian.net/wiki/x/HwUYFg
-	r = CreateObject("roRectangle",0,0,1080,1920)
+    'uncomment this section for horizontal
+    r = CreateObject("roRectangle",0,0,1920,1080)
 
 	' Create HTML Widget config
-	' https://brightsign.atlassian.net/wiki/spaces/DOC/pages/370672896/roHtmlWidget#Initialization-Parameters
+	'https://brightsign.atlassian.net/wiki/spaces/DOC/pages/370672896/roHtmlWidget#Initialization-Parameters
 	config = {
 		nodejs_enabled: true
 		url: "file:///sd:/dist/index.html"
@@ -56,7 +58,7 @@ end function
 
 function enableSSH()
 	regSSH = CreateObject("roRegistrySection", "networking")
-	
+
 	if type(regSSH) = "roRegistrySection" then
 		regSSH.Write("ssh","22")
 	endif
