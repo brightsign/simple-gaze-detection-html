@@ -31,7 +31,6 @@ function CreateHTMLWidget(mp as object) as object
 
 	sm=vidmode.GetScreenModes()
 	sm[0].transform = "90"
-'	sm[0].video_mode="1080x1920x30p"
 	sm[0].video_mode="2160x3840x30p" ' needed to make video look good
 	vidmode.SetScreenModes(sm)
 

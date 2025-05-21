@@ -7,41 +7,52 @@ This demo HTML/JS application showcases the tech behind the NPU that is enabled 
   - faces looking at the screen will be bounded in green, otherwise red
 - A live update of the incoming UDP messages at the bottom of the screen
 
-## Building the App
 
-```sh
-nvm install --lts
-nvm use --lts
+## Prerequisites
+
+This project assumes you are working in Linux.  On MacOS we get an error in the dependencies:
+
 ```
+npm error Error: Cannot find module 'node-bin-darwin-arm64/package.json'
+```
+
+We hope to resolve this soon (a PR would be welcome!).
+
+## Building the App
 
 First, clone the repository. Then, from the home directory of this repo:
 
-1. `npm install`
-2. `npm run build`
+```
+make prep
+make build
+```
 
-You should now see a `node_modules/` and `dist/` folder now in your repository. The code in `dist/` is the build application.
-
-From here, you need to deploy the built application.
+You should now see a `node_modules/` and `dist/` folder now in your repository. The code in `dist/` is the built application.
 
 ## Deploying the Application
 
-In order to run the application on a Brightsign player, the `autorun.brs` file must be on the root of the player's SD card. Then, the `dist/` folder needs to be put on the root of the SD card, with the folder contents still within the folder. The file structure should look like:
+The easiest way to build the file folder you need is to:
 
-```sh
-SD Card
-  * autorun.brs
-  - dist/
-    * index.html
-    * bundle.js
+```
+make publish
 ```
 
-The Brightsign CLI is the easiest way to do this, find info on that [here](https://www.npmjs.com/package/@brightsign/bsc).
+This should place all the files you need into the "sd" folder.  It should look like this:
+
+```sh
+sd/
+├── 3840x2160-30fps-SF-bridge.mp4
+├── autorun.brs
+└── dist
+    ├── bundle.js
+    └── index.html
+```
 
 ## Ensure the BSMP is Installed
 
 If your player needs the extension installed, include the [bsfw installation package](./bsfw/cobra-standalone-npu_gaze-0.1.3-alpha.bsfw) on the root of the SD card and it will be automatically installed on the next boot.
 
-This BSMP is released as an ALPHA quality only.  
+This BSMP is an ALPHA release.  
 
 ## Licensing
 

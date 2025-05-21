@@ -2,7 +2,6 @@
 const fs = require('fs');
 const dgram = require('dgram');
 
-//const imagePath = '/storage/sd/tmp/detected/frame.jpg';
 const imagePath = '/tmp/output.jpg';
 const imageElement = document.getElementById('image');
 const udpMessageElement = document.getElementById('udp-messages');
@@ -17,10 +16,6 @@ const fetchInterval = imageUpdateInterval / oversampling_rate;
 const udpPort = 5002;
 const udpServer = dgram.createSocket('udp4');
 
-// Variables to store the latest values for each variable
-// let sessionLast0s = 'N/A';
-// let sessionLast30s = 'N/A';
-// let sessionLast5m = 'N/A';
 let total_faces = 'N/A';
 let attending_faces = 'N/A';
 
@@ -30,14 +25,8 @@ EDIT BELOW FOR PRESENTATION CHANGES
 --------------------------------------------------------------------------------------------------------------------------------
 */
 
-// the following places the camera PiP in the lower right
-//const image_location_top = 76;  // up-down after rotation
-//const image_location_left = 83; // left-right after rotation
-
 const image_location_top = 76;  // up-down after rotation
 const image_location_left = 83; // left-right after rotation
-
-//const vidPath = '/GG-vertical.mp4'
 const vidPath = '/GG-horizontal-HD.mp4'
 
 /*
