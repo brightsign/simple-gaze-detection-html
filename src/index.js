@@ -16,7 +16,7 @@ const fetchInterval = imageUpdateInterval / oversampling_rate;
 const udpPort = 5002;
 const udpServer = dgram.createSocket('udp4');
 
-// Variables to store the latest values for each variable
+// Variables to store the latest detected face count and attending face count
 let total_faces = 'N/A';
 let attending_faces = 'N/A';
 
