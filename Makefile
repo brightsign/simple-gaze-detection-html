@@ -1,8 +1,7 @@
 prep:
 	npm install
-	wget https://firmware.bsn.cloud/cobra-standalone-npu_gaze-0.1.3-alpha.bsfw
 
-build: 
+build:
 	npm run build
 
 publish: build
@@ -15,8 +14,8 @@ publish: build
 	tree sd/
 
 clean:
+	rm -Rf *.bsfw
 	rm -Rf sd/*
 	rm -Rf dist/*
 	rm -Rf node_modules
 	rm -Rf .DS_Store
-
