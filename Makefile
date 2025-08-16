@@ -10,11 +10,10 @@ publish: build
 	cp -R dist/* sd/dist/
 	cp src/autorun.brs sd/
 	cp *mp4 sd/
-	cp *bsfw sd/
 	tree sd/
 
 clean:
-	rm -Rf *.bsfw
+	-rm -Rf *.bsfw
 	rm -Rf sd/*
 	rm -Rf dist/*
 	rm -Rf node_modules
