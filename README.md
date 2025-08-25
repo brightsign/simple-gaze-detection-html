@@ -53,7 +53,7 @@ sd
 
 The makefile automatically downloads and copies the BSMP to the sd folder.  However, if you want to manually do this step:
 
-* download the [gaze detection bsfw installation package](https://firmware.bsn.cloud/cobra-standalone-npu_gaze-0.1.3-alpha.bsfw)
+* download the [gaze detection bsfw installation package](https://github.com/brightsign/brightsign-npu-gaze-extension/releases/download/v0.1.5-alpha/cobra-standalone-npu_gaze-0.1.5-alpha.bsfw)
 * copy the file to the root of the SD card
 * it will be automatically installed on the next boot
 
