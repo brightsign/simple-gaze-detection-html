@@ -7,6 +7,13 @@ This demo HTML/JS application showcases the tech behind the NPU that is enabled 
   - faces looking at the screen will be bounded in green, otherwise red
 - A live update of the incoming UDP messages at the bottom of the screen
 
+## Just Use It!
+
+1. ensure you have all the pre-requisites per the [BSMP](https://github.com/brightsign/brightsign-npu-gaze-extension)
+2. copy the contents of the 'sd' folder to an SD card
+3. copy the [BSMP](https://github.com/brightsign/brightsign-npu-gaze-extension/releases/download/v0.1.5-alpha/cobra-standalone-npu_gaze-0.1.5-alpha.bsfw) onto the SD card
+4. place the SD card into the player and boot
+
 ## Prerequisites
 
 This project assumes you are working in Linux.  On MacOS we get an error in the dependencies:
