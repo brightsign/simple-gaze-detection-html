@@ -7,11 +7,19 @@ This demo HTML/JS application showcases the tech behind the NPU that is enabled 
   - faces looking at the screen will be bounded in green, otherwise red
 - A live update of the incoming UDP messages at the bottom of the screen
 
+> **Looking for a complete solution?**
+> [**Argus**](https://github.com/brightsign/argus-audience-measurement-extension) is BrightSign's
+> reference audience-measurement application: person counting, gaze detection, dwell time,
+> entry/exit events, and movement analytics, published over MQTT and Prometheus. This repository
+> is a single-purpose example of one piece of that system.
+>
+> *For production audience analytics rather than a visual demo, use Argus.*
+
 ## Just Use It!
 
 1. ensure you have all the pre-requisites per the [BSMP](https://github.com/brightsign/brightsign-npu-gaze-extension)
 2. copy the contents of the 'sd' folder to an SD card
-3. copy the [BSMP](https://github.com/brightsign/brightsign-npu-gaze-extension/releases/download/v0.1.5-alpha/cobra-standalone-npu_gaze-0.1.5-alpha.bsfw) onto the SD card
+3. download the BSMP `.bsfw` from the [latest release](https://github.com/brightsign/brightsign-npu-gaze-extension/releases/latest) and copy it onto the SD card
 4. place the SD card into the player and boot
 
 ## Prerequisites
@@ -60,7 +68,7 @@ sd
 
 The makefile automatically downloads and copies the BSMP to the sd folder.  However, if you want to manually do this step:
 
-* download the [gaze detection bsfw installation package](https://github.com/brightsign/brightsign-npu-gaze-extension/releases/download/v0.1.5-alpha/cobra-standalone-npu_gaze-0.1.5-alpha.bsfw)
+* download the [gaze detection bsfw installation package](https://github.com/brightsign/brightsign-npu-gaze-extension/releases/latest)
 * copy the file to the root of the SD card
 * it will be automatically installed on the next boot
 
