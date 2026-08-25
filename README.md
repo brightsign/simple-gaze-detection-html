@@ -19,7 +19,7 @@ This demo HTML/JS application showcases the tech behind the NPU that is enabled 
 
 1. ensure you have all the pre-requisites per the [BSMP](https://github.com/brightsign/brightsign-npu-gaze-extension)
 2. copy the contents of the 'sd' folder to an SD card
-3. copy the [BSMP](https://github.com/brightsign/brightsign-npu-gaze-extension/releases/latest) onto the SD card
+3. download the BSMP `.bsfw` from the [latest release](https://github.com/brightsign/brightsign-npu-gaze-extension/releases/latest) and copy it onto the SD card
 4. place the SD card into the player and boot
 
 ## Prerequisites
